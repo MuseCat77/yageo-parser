@@ -1,34 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 from selenium.webdriver.chrome.options import Options
+from utils.logger import log_message
 import time
 import os
-
-BASE_URL = 'https://www.yageo.com/en/ProductSearch'
-DOWNLOAD_PATH = 'output/temp_xlsx_pages/'
-
-
-# не скачивает автоматически и медленно стартует
-def get_waterfox_driver(download_dir):
-    options = Options()
-    # путь к Waterfox
-    options.binary_location = 'C:\Program Files\Waterfox\waterfox.exe'
-
-    # Создание профиля браузера
-    profile = FirefoxProfile()
-    profile.set_preference("browser.download.folderList", 2)  # Используем указанную папку для загрузок
-    profile.set_preference("browser.download.dir", download_dir)  # Указываем папку для загрузок
-    profile.set_preference("browser.download.manager.showWhenStarting", False)  # Не показывать окно загрузок при старте
-    profile.set_preference("browser.helperApps.neverAsk.saveToDisk",
-                           "application/octet-stream")  # Не спрашивать, куда сохранять все типы файлов
-
-    # Объединение профиля с опциями
-    options.profile = profile
-
-    driver = webdriver.Firefox(options=options)
-    return driver
 
 
 def get_chromium_driver(download_dir):
@@ -49,38 +24,53 @@ def get_chromium_driver(download_dir):
     return driver
 
 
-def scrape_and_download_xlsx(category):
-    download_dir = os.path.abspath(DOWNLOAD_PATH)
+def scrape_and_download_xlsx(base_url, category, xlsx_download_path):
+    download_dir = os.path.abspath(xlsx_download_path)
     os.makedirs(download_dir, exist_ok=True)
     driver = get_chromium_driver(download_dir)
 
+    # Функция скачивает файл, в котором экспортирована текущая страница с элементами
     def download_xlsx():
+        # тык на кнопку экспорта страницы
         download_button = driver.find_element(By.XPATH, '//*[@id="download_btn"]')
         download_button.click()
-        page_number = url.split("page=")[-1]
-        filename = "ProductSearchDownload.xlsx"
-        new_filename = f"yageo_{category}_page_{page_number}.xlsx"
-        # Ожидание скачивания файла
+
+        # Ожидание скачивания файла в 1 сек
         time.sleep(1)
+
+        # Номер текущей страницы для имени файла
+        page_number = url.split("page=")[-1]
+
+        # Имя только что скачанного файла
+        filename = "ProductSearchDownload.xlsx"
+
+        # Новое имя файла
+        new_filename = f"yageo_{category}_page_{page_number}.xlsx"
+
+        # переименовываем скачанный файл чтобы не было одинаковых имен
         os.rename(os.path.join(download_dir, filename), os.path.join(download_dir, new_filename))
-        print(f"Скачана страница {page_number} из {total_pages}")
+        log_message(f"Скачана страница {page_number} из {total_pages}")
 
     try:
-        url = f"{BASE_URL}?category={category}&apply_filter=1&page_size=100&page=1"
+        url = f"{base_url}?category={category}&apply_filter=1&page_size=100&page=1"
         driver.get(url)
 
         # Получаем общее количество страниц
+        # TODO: всегда валится в exception, понять где ошибка, что парсится не так со страницы
         try:
             total_pages_element = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/div/div[8]/div[2]')
             total_pages = int(total_pages_element.text.split()[-1])
         except IndexError:
             total_pages = 123
 
+        # Скачиваем первую страницу
         download_xlsx()
 
+        # Скачиваем остальные уже после того как получили количество страниц
         for page in range(2, total_pages + 1):
-            url = f"{BASE_URL}?category={category}&apply_filter=1&page_size=100&page={page}"
+            url = f"{base_url}?category={category}&apply_filter=1&page_size=100&page={page}"
             driver.get(url)
             download_xlsx()
     finally:
+        # Закрываем браузер когда все скачалось
         driver.quit()
