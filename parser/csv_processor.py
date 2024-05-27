@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 from utils.logger import log_message
+from utils.text_operations import extract_base_datasheet_filename
 
 
 # Объединяет xlsx файлы страниц скачанные с сайта в один большой CSV.
@@ -28,3 +29,19 @@ def process_csv(xlsx_temp_path, merged_csv_path):
     # Сохранение отсортированного DataFrame в файл CSV с точкой с запятой в качестве разделителя
     merged_df_sorted.to_csv(merged_csv_path, index=False, sep=';')
     log_message(f"Объединенный и отсортированный файл сохранен в формате CSV: {merged_csv_path}")
+
+
+def create_small_csv(csv_file, base_dir):
+    # Чтение данных из исходного CSV файла
+    df = pd.read_csv(csv_file, sep=';')
+
+    # Пройтись по всем поддиректориям
+    for root, dirs, files in os.walk(base_dir):
+        for directory in dirs:
+            base_filename = extract_base_datasheet_filename(directory)
+            matching_rows = df[df['Datasheet'].str.contains(base_filename, na=False)]
+
+            if not matching_rows.empty:
+                output_csv = os.path.join(root, directory, f"{directory}.csv")
+                matching_rows.to_csv(output_csv, index=False, sep=";")
+                log_message(f"[+] Создан маленький даташит для директории {directory}: {output_csv}")

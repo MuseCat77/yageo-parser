@@ -1,6 +1,7 @@
 import re
 import configparser
 import os
+from urllib.parse import urlparse
 
 
 # Удаляем пробелы и экранируем специальные символы
@@ -26,3 +27,22 @@ def read_series_tcc_ini(directory):
         return dict(config['DEFAULT'])
     else:
         return None
+
+
+def extract_filename_from_url(url):
+    # Парсинг URL для извлечения имени файла без расширения
+    parsed_url = urlparse(url)
+    filename = os.path.basename(parsed_url.path)
+    file_without_extension = os.path.splitext(filename)[0]
+    return file_without_extension
+
+
+def extract_version(filename):
+    # Извлечение версии из имени файла, если версия указана
+    match = re.search(r'V_(\d+)$', filename)
+    return int(match.group(1)) if match else None
+
+
+def extract_base_datasheet_filename(filename):
+    # Извлечение базового имени файла даташита без версии
+    return re.sub(r'V_\d+$', '', filename)
