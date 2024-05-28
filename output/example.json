@@ -1,0 +1,9 @@
+{
+  "UPY-4C-Array_16V-to-100V_5.csv": {
+    "base_dir": "output/datasheet/UPY-4C-Array_16V-to-100V_5/",
+    "pdf": "output/datasheet/UPY-4C-Array_16V-to-100V_5/UPY-4C-Array_16V-to-100V_5.pdf",
+    "img": "",
+    "series": "CA",
+    "tcc": ["NPO", "X7R"]
+  }
+}

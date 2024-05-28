@@ -1,55 +1,30 @@
 import os
-import re
+import shutil
 
 
-def extract_base_name(name):
-    """ Извлекает базовое имя файла или директории без версии """
-    return re.sub(r'V_\d+', '', name).strip()
+def copy_pdf_files(source_base_dir, destination_dir):
+    # Проходимся по поддиректориям внутри source_base_dir
+    for root, dirs, files in os.walk(source_base_dir):
 
-
-def copy_pdf_files(src_base_dir, dest_base_dir):
-    # Создаем целевую директорию, если она не существует
-    os.makedirs(dest_base_dir, exist_ok=True)
-
-    # Проходим по всем поддиректориям в исходной базе
-    for root, dirs, files in os.walk(src_base_dir):
         for file in files:
             if file.endswith('.pdf'):
-                # Извлечение базового имени файла без версии
-                base_filename = extract_base_name(file)
-
                 # Путь к исходному файлу
-                src_file_path = os.path.join(root, file)
-
-                # Путь к целевой директории
-                matching_dir = None
-                for dir_name in os.listdir(dest_base_dir):
-                    if extract_base_name(dir_name) == base_filename:
-                        matching_dir = dir_name
-                        break
-
-                if matching_dir:
-                    dest_dir_path = os.path.join(dest_base_dir, matching_dir)
-                else:
-                    dest_dir_path = dest_base_dir
-
+                source_file = os.path.join(root, file)
                 # Путь к целевому файлу
-                dest_file_path = os.path.join(dest_dir_path, file)
-
-                # Копируем файл в целевую директорию
-                os.makedirs(dest_dir_path, exist_ok=True)
-                with open(src_file_path, 'rb') as src_file:
-                    with open(dest_file_path, 'wb') as dest_file:
-                        dest_file.write(src_file.read())
-
-                print(f"Copied {src_file_path} to {dest_file_path}")
+                destination_file = os.path.join(destination_dir, file)
+                # Копируем PDF файл
+                shutil.copy2(source_file, destination_file)
+                print(f'Copied: {source_file} to {destination_file}')
 
 
 def main():
-    src_base_dir = "../output.old/datasheet"
-    dest_base_dir = "../output/datasheet"
+    source_base_dir = '../output.old/datasheet'
+    destination_dir = '../output/datasheet/tmp'
 
-    copy_pdf_files(src_base_dir, dest_base_dir)
+    # Создаем целевую директорию, если она не существует
+    os.makedirs(destination_dir, exist_ok=True)
+
+    copy_pdf_files(source_base_dir, destination_dir)
 
 
 if __name__ == "__main__":

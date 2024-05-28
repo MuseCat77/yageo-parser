@@ -43,7 +43,7 @@ def create_directories_for_datasheets(datasheet_filenames, base_directory):
 def save_missing_datasheet_elements_list(missing_df, output_file):
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     output_file += 'missing_datasheet_elements.csv'
-    missing_df.to_csv(output_file, index=False)
+    missing_df.to_csv(output_file, index=False, sep=";")
     log_message(f"[+] Список элементов без ссылки на Datasheet создан: {output_file}")
 
 
