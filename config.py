@@ -16,3 +16,6 @@ MERGED_CSV_PATH = "output/yageo_" + ELEMENT_CATEGORY + ".csv"
 
 # Директория в которой хранятся даташиты
 DATASHEET_DIRECTORY = "output/datasheet/"
+
+# путь хранения файла с индексами
+INDEX_FILE_PATH = "output/index.json"
