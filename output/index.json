@@ -1,0 +1,206 @@
+{
+    "UPY-4C-Array_16V-to-100V_5.csv": {
+        "base_dir": "output/datasheet/UPY-4C-Array_16V-to-100V_5/",
+        "pdf": "output/datasheet/UPY-4C-Array_16V-to-100V_5/UPY-4C-Array_16V-to-100V_5.pdf",
+        "img": "",
+        "series": "CA",
+        "tcc": [
+            "NPO",
+            "X7R"
+        ]
+    },
+    "UPY-AC-Array_NP0X7R_0.csv": {
+        "base_dir": "output/datasheet/UPY-AC-Array_NP0X7R_0/",
+        "pdf": "output/datasheet/UPY-AC-Array_NP0X7R_0/UPY-AC-Array_NP0X7R_0.pdf",
+        "img": "",
+        "series": "AC Array",
+        "tcc": [
+            "NPO",
+            "X7R"
+        ]
+    },
+    "UPY-AC_HiCap_X7RX7S_1.csv": {
+        "base_dir": "output/datasheet/UPY-AC_HiCap_X7RX7S_1/",
+        "pdf": "output/datasheet/UPY-AC_HiCap_X7RX7S_1/UPY-AC_HiCap_X7RX7S_1.pdf",
+        "img": "",
+        "series": "AC HiCap",
+        "tcc": [
+            "X7R"
+        ]
+    },
+    "UPY-AC_NP0X7RX7S_6.3V-to-2KV_20.csv": {
+        "base_dir": "output/datasheet/UPY-AC_NP0X7RX7S_6.3V-to-2KV_20/",
+        "pdf": "output/datasheet/UPY-AC_NP0X7RX7S_6.3V-to-2KV_20/UPY-AC_NP0X7RX7S_6.3V-to-2KV_20.pdf",
+        "img": "",
+        "series": "AC",
+        "tcc": [
+            "NPO",
+            "X7R",
+            "X7S"
+        ]
+    },
+    "UPY-AC_X5RX6S_0.csv": {
+        "base_dir": "output/datasheet/UPY-AC_X5RX6S_0/",
+        "pdf": "output/datasheet/UPY-AC_X5RX6S_0/UPY-AC_X5RX6S_0.pdf",
+        "img": "",
+        "series": "AC X5R/X6S",
+        "tcc": [
+            "X5R",
+            "X6S"
+        ]
+    },
+    "UPY-AC_X8GX8R_16V-to-100V_2.csv": {
+        "base_dir": "output/datasheet/UPY-AC_X8GX8R_16V-to-100V_2/",
+        "pdf": "output/datasheet/UPY-AC_X8GX8R_16V-to-100V_2/UPY-AC_X8GX8R_16V-to-100V_2.pdf",
+        "img": "",
+        "series": "AC HiTemp",
+        "tcc": [
+            "X8G",
+            "X8R"
+        ]
+    },
+    "UPY-AQ_NP0_16V-to-50V_1.csv": {
+        "base_dir": "output/datasheet/UPY-AQ_NP0_16V-to-50V_1/",
+        "pdf": "output/datasheet/UPY-AQ_NP0_16V-to-50V_1/UPY-AQ_NP0_16V-to-50V_1.pdf",
+        "img": "",
+        "series": "AQ",
+        "tcc": [
+            "NPO"
+        ]
+    },
+    "UPY-AS_X7R_16V-to-250V_3.csv": {
+        "base_dir": "output/datasheet/UPY-AS_X7R_16V-to-250V_3/",
+        "pdf": "output/datasheet/UPY-AS_X7R_16V-to-250V_3/UPY-AS_X7R_16V-to-250V_3.pdf",
+        "img": "",
+        "series": "AS",
+        "tcc": [
+            "NPO",
+            "X7R"
+        ]
+    },
+    "UPY-GPHC_X5R_4V-to-50V_30.csv": {
+        "base_dir": "output/datasheet/UPY-GPHC_X5R_4V-to-50V_30/",
+        "pdf": "output/datasheet/UPY-GPHC_X5R_4V-to-50V_30/UPY-GPHC_X5R_4V-to-50V_30.pdf",
+        "img": "",
+        "series": "CC X5R",
+        "tcc": [
+            "X5R"
+        ]
+    },
+    "UPY-GPHC_X6S_4V-to-50V_7.csv": {
+        "base_dir": "output/datasheet/UPY-GPHC_X6S_4V-to-50V_7/",
+        "pdf": "output/datasheet/UPY-GPHC_X6S_4V-to-50V_7/UPY-GPHC_X6S_4V-to-50V_7.pdf",
+        "img": "",
+        "series": "CC X6S",
+        "tcc": [
+            "X6S"
+        ]
+    },
+    "UPY-GPHC_X7R_6.3V-to-250V_24.csv": {
+        "base_dir": "output/datasheet/UPY-GPHC_X7R_6.3V-to-250V_24/",
+        "pdf": "output/datasheet/UPY-GPHC_X7R_6.3V-to-250V_24/UPY-GPHC_X7R_6.3V-to-250V_24.pdf",
+        "img": "",
+        "series": "CC X7R",
+        "tcc": [
+            "X7R",
+            "X7S"
+        ]
+    },
+    "UPY-GPHC_Y5V_6.3V-to-50V_14.csv": {
+        "base_dir": "output/datasheet/UPY-GPHC_Y5V_6.3V-to-50V_14/",
+        "pdf": "output/datasheet/UPY-GPHC_Y5V_6.3V-to-50V_14/UPY-GPHC_Y5V_6.3V-to-50V_14.pdf",
+        "img": "",
+        "series": "CC Y5V",
+        "tcc": [
+            "Y5V"
+        ]
+    },
+    "UPY-GP_NP0_16V-to-250V_19.csv": {
+        "base_dir": "output/datasheet/UPY-GP_NP0_16V-to-250V_19/",
+        "pdf": "output/datasheet/UPY-GP_NP0_16V-to-250V_19/UPY-GP_NP0_16V-to-250V_19.pdf",
+        "img": "",
+        "series": "CC NPO",
+        "tcc": [
+            "NPO"
+        ]
+    },
+    "UPY-GP_NP0_16V-to-50V_18.csv": {
+        "base_dir": "output/datasheet/UPY-GP_NP0_16V-to-50V_18/",
+        "pdf": "output/datasheet/UPY-GP_NP0_16V-to-50V_18/UPY-GP_NP0_16V-to-50V_18.pdf",
+        "img": "",
+        "series": "CC NPO",
+        "tcc": [
+            "NPO"
+        ]
+    },
+    "UPY-High_Q_NP0_16V-to-500V_17.csv": {
+        "base_dir": "output/datasheet/UPY-High_Q_NP0_16V-to-500V_17/",
+        "pdf": "output/datasheet/UPY-High_Q_NP0_16V-to-500V_17/UPY-High_Q_NP0_16V-to-500V_17.pdf",
+        "img": "",
+        "series": "CQ",
+        "tcc": [
+            "NPO"
+        ]
+    },
+    "UPY-NP0X5R_01005_4V-to-25V_V10.csv": {
+        "base_dir": "output/datasheet/UPY-NP0X5R_01005_4V-to-25V_V10/",
+        "pdf": "output/datasheet/UPY-NP0X5R_01005_4V-to-25V_V10/UPY-NP0X5R_01005_4V-to-25V_V10.pdf",
+        "img": "",
+        "series": "CC 01005",
+        "tcc": [
+            "NPO"
+        ]
+    },
+    "UPY-NP0X5R_01005_4V-to-25V_V12.csv": {
+        "base_dir": "output/datasheet/UPY-NP0X5R_01005_4V-to-25V_V12/",
+        "pdf": "output/datasheet/UPY-NP0X5R_01005_4V-to-25V_V12/UPY-NP0X5R_01005_4V-to-25V_V12.pdf",
+        "img": "",
+        "series": "CC 01005",
+        "tcc": [
+            "NPO",
+            "X5R",
+            "X7R"
+        ]
+    },
+    "UPY-NP0X7R_HV_500V-to-3KV_16.csv": {
+        "base_dir": "output/datasheet/UPY-NP0X7R_HV_500V-to-3KV_16/",
+        "pdf": "output/datasheet/UPY-NP0X7R_HV_500V-to-3KV_16/UPY-NP0X7R_HV_500V-to-3KV_16.pdf",
+        "img": "",
+        "series": "CC HV",
+        "tcc": [
+            "NPO",
+            "X7R"
+        ]
+    },
+    "UPY-NP0X7R_MV_100-to-630V_25.csv": {
+        "base_dir": "output/datasheet/UPY-NP0X7R_MV_100-to-630V_25/",
+        "pdf": "output/datasheet/UPY-NP0X7R_MV_100-to-630V_25/UPY-NP0X7R_MV_100-to-630V_25.pdf",
+        "img": "",
+        "series": "CC MV",
+        "tcc": [
+            "NPO",
+            "X7R"
+        ]
+    },
+    "UPY-ST_NPOX7R_16V-to-3KV_8.csv": {
+        "base_dir": "output/datasheet/UPY-ST_NPOX7R_16V-to-3KV_8/",
+        "pdf": "output/datasheet/UPY-ST_NPOX7R_16V-to-3KV_8/UPY-ST_NPOX7R_16V-to-3KV_8.pdf",
+        "img": "",
+        "series": "CS",
+        "tcc": [
+            "NPO",
+            "X5R",
+            "X7R"
+        ]
+    },
+    "UPY-X5R_X7R_CL_6.3V-to-50V_2.csv": {
+        "base_dir": "output/datasheet/UPY-X5R_X7R_CL_6.3V-to-50V_2/",
+        "pdf": "output/datasheet/UPY-X5R_X7R_CL_6.3V-to-50V_2/UPY-X5R_X7R_CL_6.3V-to-50V_2.pdf",
+        "img": "",
+        "series": "CL",
+        "tcc": [
+            "X5R",
+            "X7R"
+        ]
+    }
+}
