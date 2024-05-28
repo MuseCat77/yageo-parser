@@ -3,3 +3,4 @@ __pycache__/
 logs/*
 venv/*
 output.old/
+output/.~lock.yageo_mlcc.csv\#

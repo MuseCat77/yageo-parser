@@ -33,4 +33,6 @@ def download_sheets(base_dir, filetype):
                 if filetype == "datasheet":
                     get_download_url_from_dataframe(directory_path, df, 'datasheet')
                 elif filetype == "specsheet":
+                    directory_path = os.path.join(directory_path, "specsheets")
+                    os.makedirs(directory_path, exist_ok=True)
                     get_download_url_from_dataframe(directory_path, df, 'specsheet')
