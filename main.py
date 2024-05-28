@@ -3,7 +3,7 @@ from parser.csv_processor import process_csv
 from parser.make_datasheet_dirs import make_datasheet_dirs
 from parser.datasheet_downloader import download_sheets
 from parser.join_missing_datasheet import join_missing_datasheet
-from config import BASE_URL, ELEMENT_CATEGORY, XLSX_TEMP_PATH, MERGED_CSV_PATH, DATASHEET_DIRECTORY
+from config import BASE_URL, ELEMENT_CATEGORY, XLSX_TEMP_PATH, MERGED_CSV_PATH, DATASHEET_DIRECTORY, INDEX_FILE_PATH
 
 
 def main():
@@ -25,7 +25,7 @@ def main():
     elif choice == "5":
         download_sheets(DATASHEET_DIRECTORY, 'specsheet')
     elif choice == "6":
-        join_missing_datasheet(DATASHEET_DIRECTORY)
+        join_missing_datasheet(INDEX_FILE_PATH, DATASHEET_DIRECTORY)
 
 
 if __name__ == "__main__":
