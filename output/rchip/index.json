@@ -1,0 +1,282 @@
+{
+    "Datasheet_AF102M_AF104M_0_Flat Type.csv": {
+        "base_dir": "output/rchip/datasheet/Datasheet_AF102M_AF104M_0_Flat Type/",
+        "pdf": "output/rchip/datasheet/Datasheet_AF102M_AF104M_0_Flat Type/Datasheet_AF102M_AF104M_0_Flat Type.pdf",
+        "img": "",
+        "series": "AF_Array",
+        "tcc": []
+    },
+    "PYu-AA102_104_122_124_51_RoHS_L_0.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-AA102_104_122_124_51_RoHS_L_0/",
+        "pdf": "output/rchip/datasheet/PYu-AA102_104_122_124_51_RoHS_L_0/PYu-AA102_104_122_124_51_RoHS_L_0.pdf",
+        "img": "",
+        "series": "AA",
+        "tcc": []
+    },
+    "PYu-AA_51_RoHS_L_3.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-AA_51_RoHS_L_3/",
+        "pdf": "output/rchip/datasheet/PYu-AA_51_RoHS_L_3/PYu-AA_51_RoHS_L_3.pdf",
+        "img": "",
+        "series": "AA",
+        "tcc": []
+    },
+    "PYu-AC_51_RoHS_L_11.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-AC_51_RoHS_L_11/",
+        "pdf": "output/rchip/datasheet/PYu-AC_51_RoHS_L_11/PYu-AC_51_RoHS_L_11.pdf",
+        "img": "",
+        "series": "AC",
+        "tcc": []
+    },
+    "PYu-AC_wide terminal_51_RoHS_L_3.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-AC_wide terminal_51_RoHS_L_3/",
+        "pdf": "output/rchip/datasheet/PYu-AC_wide terminal_51_RoHS_L_3/PYu-AC_wide terminal_51_RoHS_L_3.pdf",
+        "img": "",
+        "series": "AC Wide Terminal",
+        "tcc": []
+    },
+    "PYu-AF122_124_162_164_51_RoHS_L_6.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-AF122_124_162_164_51_RoHS_L_6/",
+        "pdf": "output/rchip/datasheet/PYu-AF122_124_162_164_51_RoHS_L_6/PYu-AF122_124_162_164_51_RoHS_L_6.pdf",
+        "img": "",
+        "series": "AF_Array",
+        "tcc": []
+    },
+    "PYu-AF_51_RoHS_L_9.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-AF_51_RoHS_L_9/",
+        "pdf": "output/rchip/datasheet/PYu-AF_51_RoHS_L_9/PYu-AF_51_RoHS_L_9.pdf",
+        "img": "",
+        "series": "AF",
+        "tcc": []
+    },
+    "PYu-AH_51_RoHS_L_2.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-AH_51_RoHS_L_2/",
+        "pdf": "output/rchip/datasheet/PYu-AH_51_RoHS_L_2/PYu-AH_51_RoHS_L_2.pdf",
+        "img": "",
+        "series": "AH",
+        "tcc": []
+    },
+    "PYu-AR_51_RoHS_L_7.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-AR_51_RoHS_L_7/",
+        "pdf": "output/rchip/datasheet/PYu-AR_51_RoHS_L_7/PYu-AR_51_RoHS_L_7.pdf",
+        "img": "",
+        "series": "AR",
+        "tcc": []
+    },
+    "PYu-AS_RoHS_L_2.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-AS_RoHS_L_2/",
+        "pdf": "output/rchip/datasheet/PYu-AS_RoHS_L_2/PYu-AS_RoHS_L_2.pdf",
+        "img": "",
+        "series": "AS",
+        "tcc": []
+    },
+    "PYu-ATV321_PbFree_L_0.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-ATV321_PbFree_L_0/",
+        "pdf": "output/rchip/datasheet/PYu-ATV321_PbFree_L_0/PYu-ATV321_PbFree_L_0.pdf",
+        "img": "",
+        "series": "ATV",
+        "tcc": []
+    },
+    "PYu-AT_51_RoHS_L_6.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-AT_51_RoHS_L_6/",
+        "pdf": "output/rchip/datasheet/PYu-AT_51_RoHS_L_6/PYu-AT_51_RoHS_L_6.pdf",
+        "img": "",
+        "series": "AT",
+        "tcc": []
+    },
+    "PYu-HV_51_RoHS_L_1.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-HV_51_RoHS_L_1/",
+        "pdf": "output/rchip/datasheet/PYu-HV_51_RoHS_L_1/PYu-HV_51_RoHS_L_1.pdf",
+        "img": "",
+        "series": "HV",
+        "tcc": []
+    },
+    "PYu-NT_51_RoHS_L_0.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-NT_51_RoHS_L_0/",
+        "pdf": "output/rchip/datasheet/PYu-NT_51_RoHS_L_0/PYu-NT_51_RoHS_L_0.pdf",
+        "img": "",
+        "series": "NT",
+        "tcc": []
+    },
+    "PYu-PA Jumper_L_51_RoHS_2.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-PA Jumper_L_51_RoHS_2/",
+        "pdf": "output/rchip/datasheet/PYu-PA Jumper_L_51_RoHS_2/PYu-PA Jumper_L_51_RoHS_2.pdf",
+        "img": "",
+        "series": "PA Jumper",
+        "tcc": []
+    },
+    "PYu-PA0100_2512_51_RoHS_3.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-PA0100_2512_51_RoHS_3/",
+        "pdf": "output/rchip/datasheet/PYu-PA0100_2512_51_RoHS_3/PYu-PA0100_2512_51_RoHS_3.pdf",
+        "img": "",
+        "series": "PA",
+        "tcc": []
+    },
+    "PYu-PA1206_0.5_0.6mR_0.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-PA1206_0.5_0.6mR_0/",
+        "pdf": "output/rchip/datasheet/PYu-PA1206_0.5_0.6mR_0/PYu-PA1206_0.5_0.6mR_0.pdf",
+        "img": "",
+        "series": "PA",
+        "tcc": []
+    },
+    "PYu-PA1206_L_51_RoHS_2.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-PA1206_L_51_RoHS_2/",
+        "pdf": "output/rchip/datasheet/PYu-PA1206_L_51_RoHS_2/PYu-PA1206_L_51_RoHS_2.pdf",
+        "img": "",
+        "series": "PA",
+        "tcc": []
+    },
+    "PYu-PA_E_51_RoHS_10.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-PA_E_51_RoHS_10/",
+        "pdf": "output/rchip/datasheet/PYu-PA_E_51_RoHS_10/PYu-PA_E_51_RoHS_10.pdf",
+        "img": "",
+        "series": "PA",
+        "tcc": []
+    },
+    "PYu-PE-wide_termination_2.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-PE-wide_termination_2/",
+        "pdf": "output/rchip/datasheet/PYu-PE-wide_termination_2/PYu-PE-wide_termination_2.pdf",
+        "img": "",
+        "series": "PE",
+        "tcc": []
+    },
+    "PYu-PE_521_RoHS_L_12.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-PE_521_RoHS_L_12/",
+        "pdf": "output/rchip/datasheet/PYu-PE_521_RoHS_L_12/PYu-PE_521_RoHS_L_12.pdf",
+        "img": "",
+        "series": "PE",
+        "tcc": []
+    },
+    "PYu-PS_51_RoHS_3.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-PS_51_RoHS_3/",
+        "pdf": "output/rchip/datasheet/PYu-PS_51_RoHS_3/PYu-PS_51_RoHS_3.pdf",
+        "img": "",
+        "series": "PS",
+        "tcc": []
+    },
+    "PYu-PT-Group_521_RoHS_L_2.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-PT-Group_521_RoHS_L_2/",
+        "pdf": "output/rchip/datasheet/PYu-PT-Group_521_RoHS_L_2/PYu-PT-Group_521_RoHS_L_2.pdf",
+        "img": "",
+        "series": "PT",
+        "tcc": []
+    },
+    "PYu-PT-Group_521_RoHS_L_3.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-PT-Group_521_RoHS_L_3/",
+        "pdf": "output/rchip/datasheet/PYu-PT-Group_521_RoHS_L_3/PYu-PT-Group_521_RoHS_L_3.pdf",
+        "img": "",
+        "series": "PT",
+        "tcc": []
+    },
+    "PYu-PU_51_RoHS_L_10.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-PU_51_RoHS_L_10/",
+        "pdf": "output/rchip/datasheet/PYu-PU_51_RoHS_L_10/PYu-PU_51_RoHS_L_10.pdf",
+        "img": "",
+        "series": "PU",
+        "tcc": []
+    },
+    "PYu-PU_51_RoHS_L_9.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-PU_51_RoHS_L_9/",
+        "pdf": "output/rchip/datasheet/PYu-PU_51_RoHS_L_9/PYu-PU_51_RoHS_L_9.pdf",
+        "img": "",
+        "series": "PU",
+        "tcc": []
+    },
+    "PYu-RC_51_RoHS_P_5.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-RC_51_RoHS_P_5/",
+        "pdf": "output/rchip/datasheet/PYu-RC_51_RoHS_P_5/PYu-RC_51_RoHS_P_5.pdf",
+        "img": "",
+        "series": "RC_P",
+        "tcc": []
+    },
+    "PYu-RC_Group_51_RoHS_L_12.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-RC_Group_51_RoHS_L_12/",
+        "pdf": "output/rchip/datasheet/PYu-RC_Group_51_RoHS_L_12/PYu-RC_Group_51_RoHS_L_12.pdf",
+        "img": "",
+        "series": "RC",
+        "tcc": []
+    },
+    "PYu-RE_105_RoHS_L_7.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-RE_105_RoHS_L_7/",
+        "pdf": "output/rchip/datasheet/PYu-RE_105_RoHS_L_7/PYu-RE_105_RoHS_L_7.pdf",
+        "img": "",
+        "series": "RE",
+        "tcc": []
+    },
+    "PYu-RE_105_RoHS_P_3.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-RE_105_RoHS_P_3/",
+        "pdf": "output/rchip/datasheet/PYu-RE_105_RoHS_P_3/PYu-RE_105_RoHS_P_3.pdf",
+        "img": "",
+        "series": "RE_P",
+        "tcc": []
+    },
+    "PYu-RL_Group_521_RoHS_L_3.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-RL_Group_521_RoHS_L_3/",
+        "pdf": "output/rchip/datasheet/PYu-RL_Group_521_RoHS_L_3/PYu-RL_Group_521_RoHS_L_3.pdf",
+        "img": "",
+        "series": "RL",
+        "tcc": []
+    },
+    "PYu-RP_51_RoHS_L_3.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-RP_51_RoHS_L_3/",
+        "pdf": "output/rchip/datasheet/PYu-RP_51_RoHS_L_3/PYu-RP_51_RoHS_L_3.pdf",
+        "img": "",
+        "series": "RP",
+        "tcc": []
+    },
+    "PYu-RT_1-to-0.01_RoHS_L_15.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-RT_1-to-0.01_RoHS_L_15/",
+        "pdf": "output/rchip/datasheet/PYu-RT_1-to-0.01_RoHS_L_15/PYu-RT_1-to-0.01_RoHS_L_15.pdf",
+        "img": "",
+        "series": "RT",
+        "tcc": []
+    },
+    "PYu-RV_51_RoHS_L_12.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-RV_51_RoHS_L_12/",
+        "pdf": "output/rchip/datasheet/PYu-RV_51_RoHS_L_12/PYu-RV_51_RoHS_L_12.pdf",
+        "img": "",
+        "series": "RV",
+        "tcc": []
+    },
+    "PYu-RV_51_RoHS_P_0.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-RV_51_RoHS_P_0/",
+        "pdf": "output/rchip/datasheet/PYu-RV_51_RoHS_P_0/PYu-RV_51_RoHS_P_0.pdf",
+        "img": "",
+        "series": "RV_P",
+        "tcc": []
+    },
+    "PYu-SR_20105_RoHS_L_12.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-SR_20105_RoHS_L_12/",
+        "pdf": "output/rchip/datasheet/PYu-SR_20105_RoHS_L_12/PYu-SR_20105_RoHS_L_12.pdf",
+        "img": "",
+        "series": "SR",
+        "tcc": []
+    },
+    "PYu-SR_51_RoHS_P_1.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-SR_51_RoHS_P_1/",
+        "pdf": "output/rchip/datasheet/PYu-SR_51_RoHS_P_1/PYu-SR_51_RoHS_P_1.pdf",
+        "img": "",
+        "series": "SR",
+        "tcc": []
+    },
+    "PYu-TR_0-30_RoHS_L_1.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-TR_0-30_RoHS_L_1/",
+        "pdf": "output/rchip/datasheet/PYu-TR_0-30_RoHS_L_1/PYu-TR_0-30_RoHS_L_1.pdf",
+        "img": "",
+        "series": "TR",
+        "tcc": []
+    },
+    "PYu-VT_51_RoHS_L_0.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-VT_51_RoHS_L_0/",
+        "pdf": "output/rchip/datasheet/PYu-VT_51_RoHS_L_0/PYu-VT_51_RoHS_L_0.pdf",
+        "img": "",
+        "series": "VT",
+        "tcc": []
+    },
+    "PYu-YC_TC_group_51_RoHS_L_9.csv": {
+        "base_dir": "output/rchip/datasheet/PYu-YC_TC_group_51_RoHS_L_9/",
+        "pdf": "output/rchip/datasheet/PYu-YC_TC_group_51_RoHS_L_9/PYu-YC_TC_group_51_RoHS_L_9.pdf",
+        "img": "",
+        "series": "TC",
+        "tcc": []
+    }
+}

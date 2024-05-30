@@ -4,3 +4,5 @@ logs/*
 venv/*
 output.old/
 output/.~lock.yageo_mlcc.csv\#
+output/datasheet/.~lock.missing_datasheet_elements.csv\#
+output/datasheet/.~lock.missing_datasheet_elements.csv\#
