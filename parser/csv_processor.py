@@ -23,7 +23,7 @@ def process_csv(xlsx_temp_path, merged_csv_path):
     log_message("Импорт данных в датафрейм...")
 
     # Сортировка данных по столбцу "Series"
-    merged_df_sorted = merged_df.sort_values(by=['Series', 'TCC', 'Datasheet'])
+    merged_df_sorted = merged_df.sort_values(by=['Series', 'Part Number'])
     log_message("Сортировка данных...")
 
     # Сохранение отсортированного DataFrame в файл CSV с точкой с запятой в качестве разделителя
@@ -44,4 +44,4 @@ def create_small_csv(csv_file, base_dir):
             if not matching_rows.empty:
                 output_csv = os.path.join(root, directory, f"{directory}.csv")
                 matching_rows.to_csv(output_csv, index=False, sep=";")
-                log_message(f"[+] Создан маленький даташит для директории {directory}: {output_csv}")
+                log_message(f"[+] Создан маленький csv для директории {directory}: {output_csv}")

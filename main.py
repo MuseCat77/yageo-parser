@@ -3,6 +3,7 @@ from parser.csv_processor import process_csv
 from parser.make_datasheet_dirs import make_datasheet_dirs
 from parser.datasheet_downloader import download_sheets
 from parser.join_missing_datasheet import join_missing_datasheet
+from utils.make_json_index import make_json_index
 from config import BASE_URL, ELEMENT_CATEGORY, XLSX_TEMP_PATH, MERGED_CSV_PATH, DATASHEET_DIRECTORY, INDEX_FILE_PATH
 
 
@@ -13,6 +14,7 @@ def main():
 4) Скачать datasheet файлы
 5) Скачать specsheet файлы
 6) Распределить недостающие элементы без datasheet по маленьким спискам
+7) Создать json с индексами
 ''')
     if choice == "1":
         scrape_and_download_xlsx(BASE_URL, ELEMENT_CATEGORY, XLSX_TEMP_PATH)
@@ -25,7 +27,9 @@ def main():
     elif choice == "5":
         download_sheets(DATASHEET_DIRECTORY, 'specsheet')
     elif choice == "6":
-        join_missing_datasheet(INDEX_FILE_PATH, DATASHEET_DIRECTORY)
+        join_missing_datasheet(DATASHEET_DIRECTORY, INDEX_FILE_PATH)
+    elif choice == "7":
+        make_json_index(DATASHEET_DIRECTORY, INDEX_FILE_PATH)
 
 
 if __name__ == "__main__":

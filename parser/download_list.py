@@ -36,7 +36,7 @@ def scrape_and_download_xlsx(base_url, category, xlsx_download_path):
         download_button.click()
 
         # Ожидание скачивания файла в 1 сек
-        time.sleep(1)
+        time.sleep(0.5)
 
         # Номер текущей страницы для имени файла
         page_number = url.split("page=")[-1]
@@ -48,7 +48,11 @@ def scrape_and_download_xlsx(base_url, category, xlsx_download_path):
         new_filename = f"yageo_{category}_page_{page_number}.xlsx"
 
         # переименовываем скачанный файл чтобы не было одинаковых имен
-        os.rename(os.path.join(download_dir, filename), os.path.join(download_dir, new_filename))
+        while not os.path.exists(os.path.join(download_dir, filename)):
+            time.sleep(0.1)
+        if os.path.isfile(os.path.join(download_dir, filename)):
+            os.rename(os.path.join(download_dir, filename), os.path.join(download_dir, new_filename))
+
         log_message(f"Скачана страница {page_number} из {total_pages}")
 
     try:
@@ -56,7 +60,6 @@ def scrape_and_download_xlsx(base_url, category, xlsx_download_path):
         driver.get(url)
 
         # Получаем общее количество страниц
-        # TODO: всегда валится в exception, понять где ошибка, что парсится не так со страницы
         try:
             total_pages_element = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/div/div[8]/div[2]')
             total_pages = int(total_pages_element.text.split()[-1])
