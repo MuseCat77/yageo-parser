@@ -2,21 +2,25 @@ import os
 import pandas as pd
 from utils.downloader import download_file
 from utils.logger import log_message
+from concurrent.futures import ThreadPoolExecutor
 
 
 def get_download_url_from_dataframe(directory, df, filetype):
     column = 'Datasheet'
     if filetype == 'specsheet':
         column = 'spec sheet link'
-    for url in df[column]:
-        if pd.notnull(url) and url.strip():  # Проверка наличия URL и его содержимого
-            log_message(f"[!] Скачиваю {filetype}")
-            output_file = os.path.join(directory, os.path.basename(url))
-            if ".pdf" not in url:
-                output_file += ".pdf"
-            download_file(url, output_file)
-        else:
-            log_message(f"[-] Нет ссылки на {filetype} в ячейке {url}")
+
+    unique_links = df[column].unique()
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        for url in unique_links:
+            if pd.notnull(url) and url.strip():  # Проверка наличия URL и его содержимого
+                log_message(f"[!] Скачиваю {filetype}")
+                output_file = os.path.join(directory, os.path.basename(url))
+                if ".pdf" not in url:
+                    output_file += ".pdf"
+                executor.submit(download_file, url, output_file)
+            else:
+                log_message(f"[-] Нет ссылки на {filetype} в ячейке {url}")
 
 
 def download_sheets(base_dir, filetype):

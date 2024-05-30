@@ -5,7 +5,7 @@ import json
 
 
 # Функция для обновления данных из missing_datasheet_elements.csv в соответствующие csv
-def join_missing_datasheet(index_filepath, missing_data_csv):
+def join_missing_datasheet(missing_data_csv, index_filepath):
     missing_data_csv += "missing_datasheet_elements.csv"
     log_message(missing_data_csv)
     # Загрузка JSON файла
